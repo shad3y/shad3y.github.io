@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .contact-info {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .account button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .account button:hover {
+    background-color: #333;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(to right, blue, red);
+    opacity: 0.75;
+    padding: 10px;
+}
+
+.banner .banner-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.banner button:hover {
+    background-color: #ddd;
+}
+
+/* Clickable Titles Section */
+.clickable-titles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.title-column {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.title-column h3 {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.title-column p {
+    display: none;
+    font-size: 14px;
+    color: #555;
+}
+
+.title-column:hover p {
+    display: block;
+}
+
+/* States Image Section */
+.states-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Service Areas Section */
+.service-areas {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-areas h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.service-areas select {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+}
