@@ -3,15 +3,30 @@ body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
+/* General Section Styling */
+section {
+    background: white; /* Paper effect color */
+    border-radius: 10px; /* Rounded corners for paper effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* 3D shadow */
+    padding: 20px; /* Add space inside the sections */
+    margin: 20px auto; /* Center sections with spacing between them */
+    max-width: 1200px; /* Limit width for readability */
+}
+
+/* Header Section */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 header .logo img {
@@ -30,6 +45,8 @@ header .account button {
     color: white;
     cursor: pointer;
     font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header .account button:hover {
@@ -41,6 +58,10 @@ header .account button:hover {
     background: linear-gradient(to right, blue, red);
     opacity: 0.75;
     padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .banner .banner-buttons {
@@ -62,11 +83,18 @@ header .account button:hover {
     background-color: #ddd;
 }
 
+/* Slideshow Section */
+.slideshow {
+    height: 300px; /* Placeholder height */
+    background: #ccc url('image-placeholder.jpg') center/cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
 /* Clickable Titles Section */
 .clickable-titles {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     justify-content: space-between;
 }
 
@@ -96,15 +124,18 @@ header .account button:hover {
     max-width: 600px;
     margin: 20px auto;
     display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Service Areas Section */
 .service-areas {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-areas div {
+    width: 48%;
 }
 
 .service-areas h4 {
@@ -117,4 +148,6 @@ header .account button:hover {
     font-size: 14px;
     width: 100%;
     max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
