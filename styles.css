@@ -1,106 +1,99 @@
-/* Global Styles */
-body {
-    font-family: 'Helvetica', sans-serif;
+/* General Reset */
+body, h1, h2, h3, p, a, button, select, option {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
     background: url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #000;
+    color: #333;
 }
 
 /* Semi-Transparent Paper Effect */
 .paper-effect {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect behind the paper */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a raised effect */
-    border-radius: 10px; /* Rounded corners for the paper */
-    padding: 20px;
-    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1200px;
 }
 
-/* Header */
+/* Header Section */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 1200px;
+    padding: 15px;
 }
 
-/* Banner */
+header .logo img {
+    max-height: 80px;
+}
+
+header .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header .account button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header .account button:hover {
+    background-color: #0056b3;
+}
+
+/* Banner Section */
 .banner {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
     background: linear-gradient(to right, blue, red);
     opacity: 0.75;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
-}
-
-.banner .banner-buttons a {
-    text-decoration: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 14px;
-    margin: 0 10px;
     border-radius: 15px;
-    transition: background-color 0.3s;
 }
 
-.banner .banner-buttons a.active {
-    background-color: cyan;
-}
-
-/* Main Content */
-.main-content .content-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-.content-item {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for raised effect */
+.banner a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
     border-radius: 10px;
-    padding: 20px;
-}
-
-.dropdown-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin: 40px auto;
-    max-width: 1200px;
-}
-
-.dropdown-column {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-column h2 {
-    margin-bottom: 15px;
-}
-
-.dropdown-column label {
-    display: block;
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
-.dropdown-column select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.banner a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+.banner a.active {
+    background-color: cyan;
+    color: black;
+}
+
+/* Main Content Grid */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.content-grid .content-item {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s
