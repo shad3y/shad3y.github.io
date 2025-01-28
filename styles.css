@@ -92,8 +92,46 @@ header .account button:hover {
 }
 
 .content-grid .content-item {
-    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.content-grid .content-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown Grid */
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.dropdown-column h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.dropdown-column label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-column select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
