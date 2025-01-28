@@ -26,11 +26,6 @@ header .logo img {
 header .contact-info {
     margin-left: 20px;
     line-height: 1.6;
-    flex-grow: 1;
-}
-
-header .account {
-    margin-left: auto;
 }
 
 header .account button {
@@ -56,3 +51,102 @@ header .account button:hover {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.banner .banner-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.banner button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Slideshow Section */
+.slideshow {
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Clickable Titles Section */
+.clickable-titles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title-column {
+    width: 45%; /* Two columns */
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* States Image Section */
+.states-image {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.states-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Areas Section */
+.service-areas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.service-areas div {
+    flex: 1;
+    text-align: center;
+}
+
+.service-areas h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.service-areas select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
