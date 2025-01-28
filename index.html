@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Company Website</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Company Logo">
         </div>
         <div class="contact-info">
             <p>City 1: (123) 456-7890</p>
-            <p>City 2: (123) 456-7890</p>
-            <p>City 3: (123) 456-7890</p>
-            <p>City 4: (123) 456-7890</p>
+            <p>City 2: (987) 654-3210</p>
+            <p>City 3: (555) 123-4567</p>
+            <p>City 4: (444) 789-1234</p>
         </div>
         <div class="account">
             <button>My Account</button>
         </div>
     </header>
-
-    <!-- Banner Section -->
-    <section class="banner">
+    <div class="banner">
         <div class="banner-buttons">
             <a href="index.html" class="active">Home</a>
             <a href="heating-and-air.html">Heating & Air</a>
@@ -34,14 +29,66 @@
             <a href="about-us.html">About Us</a>
             <a href="customer-service.html">Customer Service</a>
         </div>
-    </section>
-
-    <!-- Main Content Section -->
-    <section>
-        <h1>Welcome to Our Company</h1>
-        <p>We provide top-quality heating, air conditioning, fuel, and oil services. Our customer service is second to none!</p>
-    </section>
-
+    </div>
+    <main>
+        <section class="main-content">
+            <div class="content-grid">
+                <div class="content-item">
+                    <h2>Header 1</h2>
+                    <p>Body content for header 1 goes here.</p>
+                </div>
+                <div class="content-item">
+                    <h2>Header 2</h2>
+                    <p>Body content for header 2 goes here.</p>
+                </div>
+                <div class="content-item">
+                    <h2>Header 3</h2>
+                    <p>Body content for header 3 goes here.</p>
+                </div>
+                <div class="content-item">
+                    <h2>Header 4</h2>
+                    <p>Body content for header 4 goes here.</p>
+                </div>
+            </div>
+            <div class="dropdown-grid">
+                <div class="dropdown-column">
+                    <h2>Residential Area of Service</h2>
+                    <label for="residential-county1">Blank County 1</label>
+                    <select id="residential-county1">
+                        <option value="">Select County</option>
+                        <option value="county1">County 1</option>
+                        <option value="county2">County 2</option>
+                    </select>
+                    <label for="residential-county2">Blank County 2</label>
+                    <select id="residential-county2">
+                        <option value="">Select County</option>
+                        <option value="county1">County 1</option>
+                        <option value="county2">County 2</option>
+                    </select>
+                    <label for="residential-county3">Blank County 3</label>
+                    <select id="residential-county3">
+                        <option value="">Select County</option>
+                        <option value="county1">County 1</option>
+                        <option value="county2">County 2</option>
+                    </select>
+                </div>
+                <div class="dropdown-column">
+                    <h2>Commercial Area of Service</h2>
+                    <label for="commercial-county1">Blank County 1</label>
+                    <select id="commercial-county1">
+                        <option value="">Select County</option>
+                        <option value="county1">County 1</option>
+                        <option value="county2">County 2</option>
+                    </select>
+                    <label for="commercial-county2">Blank County 2</label>
+                    <select id="commercial-county2">
+                        <option value="">Select County</option>
+                        <option value="county1">County 1</option>
+                        <option value="county2">County 2</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
-
