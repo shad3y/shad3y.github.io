@@ -56,24 +56,3 @@ header .account button:hover {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-
-.banner .banner-buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.banner button {
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: 2px solid black;
-    background-color: transparent;
-    color: black;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.banner button:hover {
-    background-color: #ddd;
-}
