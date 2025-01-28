@@ -8,6 +8,16 @@ body {
     color: #000;
 }
 
+/* Semi-Transparent Paper Effect */
+.paper-effect {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect behind the paper */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a raised effect */
+    border-radius: 10px; /* Rounded corners for the paper */
+    padding: 20px;
+    margin: 20px auto;
+}
+
 /* Header */
 header {
     display: flex;
@@ -19,25 +29,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 1200px;
-}
-
-header .logo img {
-    width: 150px;
-}
-
-header .contact-info {
-    margin-left: 20px;
-    line-height: 1.6;
-}
-
-header .account button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #000;
-    color: white;
-    font-size: 14px;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 /* Banner */
@@ -75,10 +66,10 @@ header .account button {
 }
 
 .content-item {
-    background-color: white;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for raised effect */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .dropdown-grid {
@@ -90,7 +81,7 @@ header .account button {
 }
 
 .dropdown-column {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
