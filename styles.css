@@ -14,7 +14,7 @@ header {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 1200px;
 }
@@ -24,6 +24,7 @@ header .logo img {
 }
 
 header .contact-info {
+    flex-grow: 1;
     margin-left: 20px;
     line-height: 1.6;
 }
@@ -36,11 +37,6 @@ header .account button {
     font-size: 14px;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header .account button:hover {
-    background-color: #333;
 }
 
 /* Banner Section */
@@ -51,7 +47,6 @@ header .account button:hover {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     text-align: center;
 }
 
@@ -70,19 +65,6 @@ header .account button:hover {
     font-size: 14px;
 }
 
-.banner button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Slideshow Section */
-.slideshow {
-    max-width: 1200px;
-    margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Clickable Titles Section */
 .clickable-titles {
     display: flex;
@@ -94,7 +76,6 @@ header .account button:hover {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .title-column {
@@ -127,26 +108,9 @@ header .account button:hover {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 1200px;
     margin: 20px auto;
 }
 
 .service-areas div {
-    flex: 1;
-    text-align: center;
-}
-
-.service-areas h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.service-areas select {
-    width: 80%;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    flex
