@@ -10,6 +10,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -25,27 +26,14 @@ header .logo img {
 header .contact-info {
     margin-left: 20px;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
-/* Banner Section */
-.banner {
-    position: relative;
-    background: linear-gradient(to right, blue, red);
-    opacity: 0.75;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+header .account {
+    margin-left: auto;
 }
 
-.banner .account {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-.banner .account button {
+header .account button {
     padding: 10px 20px;
     border: none;
     background-color: #000;
@@ -56,10 +44,24 @@ header .contact-info {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+header .account button:hover {
+    background-color: #333;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(to right, blue, red);
+    opacity: 0.75;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
 .banner .banner-buttons {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px; /* Space below account button */
 }
 
 .banner button {
@@ -72,39 +74,6 @@ header .contact-info {
     font-size: 14px;
 }
 
-/* Service Areas Section */
-.service-areas {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    max-width: 1200px;
-    margin: 20px auto;
+.banner button:hover {
+    background-color: #ddd;
 }
-
-.service-areas .residential,
-.service-areas .commercial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48%;
-}
-
-.service-areas h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.service-areas select {
-    width: 100%;
-    max-width: 250px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
