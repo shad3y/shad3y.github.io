@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Company Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="contact-info">
+            <p>City 1: (123) 456-7890</p>
+            <p>City 2: (123) 456-7890</p>
+            <p>City 3: (123) 456-7890</p>
+            <p>City 4: (123) 456-7890</p>
+        </div>
+        <div class="account">
+            <button>My Account</button>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-buttons">
+            <a href="index.html">Home</a>
+            <a href="heating-and-air.html">Heating & Air</a>
+            <a href="fuel-and-oil.html">Fuel & Oil</a>
+            <a href="about-us.html">About Us</a>
+            <a href="customer-service.html" class="active">Customer Service</a>
+        </div>
+    </section>
+
+    <!-- Customer Service Content Section -->
+    <section>
+        <h1>Customer Service</h1>
+        <p>Our customer service team is available 24/7 to assist you with any inquiries or service requests.</p>
+    </section>
+
+</body>
+</html>
