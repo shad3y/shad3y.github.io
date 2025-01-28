@@ -36,9 +36,12 @@ header .logo img {
 }
 
 header .contact-info {
+    color: white;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-align: left;
 }
 
 header .account button {
@@ -91,19 +94,10 @@ header .account button:hover {
     gap: 20px;
 }
 
-.content-grid .content-item {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.content-grid .content-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 /* Dropdown Grid */
@@ -135,3 +129,4 @@ header .account button:hover {
     margin-bottom: 15px;
     font-size: 14px;
 }
+
