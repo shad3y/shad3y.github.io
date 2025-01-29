@@ -13,6 +13,14 @@ body {
     color: #333;
 }
 
+/* Top Banner with Carbon Background */
+.top-banner {
+    background: url('carbon-background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80px; /* Adjusted to match the logo height */
+    width: 100%;
+}
+
 /* Semi-Transparent Paper Effect */
 .paper-effect {
     background: rgba(255, 255, 255, 0.8);
@@ -108,16 +116,6 @@ header .account button:hover {
 .residential-services h2, .commercial-services h2 {
     text-align: center;
     color: #007BFF;
-}
-
-.residential-services h3, .commercial-services h3 {
-    color: #333;
-    margin-top: 10px;
-}
-
-.residential-services p, .commercial-services p {
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 /* Dropdown Grid */
