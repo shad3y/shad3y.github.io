@@ -37,19 +37,29 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    position: relative;
 }
 
-header .logo img {
-    max-height: 80px;
-}
-
+/* Move City 1-4 and Numbers to Left */
 header .contact-info {
+    position: absolute;
+    left: 150px;
+    text-align: left;
     color: white;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    text-align: left;
+}
+
+/* Logo */
+header .logo img {
+    max-height: 80px;
+}
+
+/* My Account Button */
+header .account {
+    margin-left: auto;
 }
 
 header .account button {
@@ -66,7 +76,7 @@ header .account button:hover {
     background-color: #0056b3;
 }
 
-/* Banner Section */
+/* Navigation Banner */
 .banner {
     display: flex;
     justify-content: center;
@@ -144,14 +154,4 @@ header .account button:hover {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
-    font-size: 14px;
-}
-
-/* Align Contact Info on the Left of Logo */
-header .contact-info {
-    position: absolute;
-    right: 20px;
-    text-align: left;
-}
+    border: 1px solid #ddd
