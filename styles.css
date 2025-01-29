@@ -40,10 +40,10 @@ header {
     position: relative;
 }
 
-/* Move City 1-4 */
+/* City 1-4 */
 header .contact-info {
     position: absolute;
-    left: 200px;
+    left: 100px;
     text-align: left;
     color: white;
     font-weight: bold;
