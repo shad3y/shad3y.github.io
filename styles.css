@@ -26,8 +26,8 @@ body {
 /* Header Section */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
@@ -87,12 +87,37 @@ header .account button:hover {
     color: black;
 }
 
-/* Main Content Grid */
-.main-content {
+/* Services Grid */
+.services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Residential and Commercial Sections */
+.residential-services, .commercial-services {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.residential-services h2, .commercial-services h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.residential-services h3, .commercial-services h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.residential-services p, .commercial-services p {
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /* Dropdown Grid */
@@ -124,4 +149,11 @@ header .account button:hover {
     border: 1px solid #ddd;
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+/* Align Contact Info on the Left of Logo */
+header .contact-info {
+    position: absolute;
+    right: 20px;
+    text-align: left;
 }
