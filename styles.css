@@ -43,13 +43,13 @@ header {
 /* Move City 1-4 and Numbers to Left */
 header .contact-info {
     position: absolute;
-    left: 150px;
+    left: 200px;
     text-align: left;
     color: white;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 
 /* Logo */
