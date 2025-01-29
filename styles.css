@@ -40,7 +40,7 @@ header {
     position: relative;
 }
 
-/* Move City 1-4 and Numbers to Left */
+/* Move City 1-4 */
 header .contact-info {
     position: absolute;
     left: 200px;
