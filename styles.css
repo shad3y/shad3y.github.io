@@ -101,4 +101,43 @@ header .account button:hover {
 /* Paper Effect for Other Sections */
 .paper-effect {
     background: rgba(255, 255, 255, 0.8);
-    bor
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1200px;
+}
+
+/* Services Grid (Residential & Commercial) */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.services-grid .residential-services,
+.services-grid .commercial-services {
+    flex: 1;
+}
+
+/* Dropdown Grid */
+.dropdown-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.dropdown-column {
+    flex: 1;
+}
+
+.dropdown-column select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
