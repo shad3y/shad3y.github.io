@@ -13,25 +13,18 @@ body {
     color: #333;
 }
 
-/* Top Banner with Carbon Background */
-.top-banner {
+/* Top Section with Carbon Fiber Background */
+.top-section {
     background: url('carbon-background.jpg') no-repeat center center;
     background-size: cover;
-    height: 80px; /* Adjusted to match the logo height */
-    width: 100%;
-}
-
-/* Semi-Transparent Paper Effect */
-.paper-effect {
-    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    margin: 15px auto;
     max-width: 1200px;
+    margin: 20px auto;
 }
 
-/* Header Section */
+/* Header Layout */
 header {
     display: flex;
     justify-content: space-between;
@@ -105,53 +98,7 @@ header .account button:hover {
     color: black;
 }
 
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Residential and Commercial Sections */
-.residential-services, .commercial-services {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.residential-services h2, .commercial-services h2 {
-    text-align: center;
-    color: #007BFF;
-}
-
-/* Dropdown Grid */
-.dropdown-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.dropdown-column h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #007BFF;
-}
-
-.dropdown-column label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.dropdown-column select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd
+/* Paper Effect for Other Sections */
+.paper-effect {
+    background: rgba(255, 255, 255, 0.8);
+    bor
