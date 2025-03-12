@@ -3,82 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bain - HVAC and Fuel Delivery Services</title>
+    <meta name="description" content="Bain provides air conditioning, heating services, and fuel & heating oil delivery in Greensboro, High Point, Winston-Salem, and surrounding areas.">
+    <meta name="keywords" content="HVAC, heating, cooling, oil delivery, fuel services, Greensboro, High Point, Winston-Salem">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            if ($(window).width() < 825) {
+                window.location.href = "http://m.bainonline.com";
+            }
+        });
+    </script>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 1150px;
+            text-align: center;
+        }
+        #global {
+            margin: 0 auto;
+            width: 1150px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <!-- Top Banner with Carbon Background -->
-    <div class="top-banner"></div>
-
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Company Logo">
-        </div>
-        <div class="contact-info">
-            <p>City 1: (123) 456-7890</p>
-            <p>City 2: (234) 567-8901</p>
-            <p>City 3: (345) 678-9012</p>
-            <p>City 4: (456) 789-0123</p>
-        </div>
-        <div class="account">
-            <button>My Account</button>
-        </div>
-    </header>
-    
-    <nav class="banner">
-        <a href="index.html" class="active">Home</a>
-        <a href="heating-and-air.html">Heating & Air</a>
-        <a href="fuel-and-oil.html">Fuel & Oil</a>
-        <a href="about-us.html">About Us</a>
-        <a href="customer-service.html">Customer Service</a>
-    </nav>
-    
-    <main>
-        <section class="services-grid paper-effect">
-            <div class="residential-services">
-                <h2>Residential Services</h2>
-                <a href="heating-and-air.html"><h3>Heating & Air</h3></a>
-                <p>Expert heating and air conditioning services for homes.</p>
-                <a href="heating-and-air.html"><h3>Additional Residential Service</h3></a>
-                <p>More solutions tailored for residential needs.</p>
-            </div>
-            <div class="commercial-services">
-                <h2>Commercial Services</h2>
-                <a href="fuel-and-oil.html"><h3>Fuel & Oil</h3></a>
-                <p>Commercial fuel and oil delivery services.</p>
-                <a href="fuel-and-oil.html"><h3>Additional Commercial Service</h3></a>
-                <p>Energy-efficient oil and fuel solutions for businesses.</p>
-            </div>
-        </section>
-
-        <section class="dropdown-grid paper-effect">
-            <div class="dropdown-column">
-                <h2>Residential Area of Service</h2>
-                <label for="res-county-1">Blank County 1</label>
-                <select id="res-county-1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                </select>
-                <label for="res-county-2">Blank County 2</label>
-                <select id="res-county-2">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                </select>
-            </div>
-            <div class="dropdown-column">
-                <h2>Commercial Area of Service</h2>
-                <label for="com-county-1">Blank County 1</label>
-                <select id="com-county-1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                </select>
-                <label for="com-county-2">Blank County 2</label>
-                <select id="com-county-2">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                </select>
-            </div>
-        </section>
-    </main>
+    <div id="global">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="./Bain_Logo_main.gif" alt="Bain Logo" width="133" height="65">
+        </header>
+        <main>
+            <section>
+                <h1>Welcome to Bain</h1>
+                <p>Your trusted provider for HVAC services and fuel delivery.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Bain. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
