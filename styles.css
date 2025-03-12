@@ -1,143 +1,61 @@
-/* General Reset */
-body, h1, h2, h3, h4, p, a, button, select, option {
+/* General Styles */
+body {
+    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
+    background: #f4f4f4;
 }
 
-/* Body Background */
-body {
-    background: url('background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-}
-
-/* Top Section with Carbon Fiber Background */
-.top-section {
-    background: url('carbon-background.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-/* Header Layout */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    position: relative;
-}
-
-/* City 1-4 */
-header .contact-info {
-    position: absolute;
-    left: 100px;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Logo */
-header .logo img {
-    max-height: 80px;
-}
-
-/* My Account Button */
-header .account {
-    margin-left: auto;
-}
-
-header .account button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-header .account button:hover {
-    background-color: #0056b3;
-}
-
-/* Navigation Banner */
+/* Banner Styles */
 .banner {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
     background: linear-gradient(to right, blue, red);
     opacity: 0.75;
-    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
 }
 
-.banner a {
+.banner h1 {
+    color: black;
+    margin: 0;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.nav-buttons a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px 20px;
     border: 2px solid black;
-    border-radius: 10px;
-    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
-.banner a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.nav-buttons a:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
-.banner a.active {
-    background-color: cyan;
-    color: black;
-}
-
-/* Paper Effect for Other Sections */
-.paper-effect {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    margin: 15px auto;
+/* Main Content */
+.container {
     max-width: 1200px;
-}
-
-/* Services Grid (Residential & Commercial) */
-.services-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
+    margin: auto;
     padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.services-grid .residential-services,
-.services-grid .commercial-services {
-    flex: 1;
-}
-
-/* Dropdown Grid */
-.dropdown-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+/* Footer */
+.footer {
     text-align: center;
-    padding: 20px;
-}
-
-.dropdown-column {
-    flex: 1;
-}
-
-.dropdown-column select {
-    width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
+    background: black;
+    color: white;
+    margin-top: 20px;
 }
+
